@@ -25,7 +25,8 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: gcr.io/opencensus-microservices-demo/nodejsservice
+        image: gcr.io/opencensus-interoptest/nodejsservice
+        imagePullPolicy: Never
         ports:
         - containerPort: 10301
           name: nodejsservice

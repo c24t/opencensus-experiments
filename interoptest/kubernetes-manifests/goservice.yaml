@@ -25,7 +25,8 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: gcr.io/opencensus-microservices-demo/goservice
+        image: gcr.io/opencensus-interoptest/goservice
+        imagePullPolicy: Never
         ports:
         - containerPort: 10201
           name: goservice

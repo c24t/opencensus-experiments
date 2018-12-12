@@ -25,7 +25,8 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: gcr.io/opencensus-microservices-demo/javaservice
+        image: gcr.io/opencensus-interoptest/javaservice
+        imagePullPolicy: Never
         ports:
         - containerPort: 10101
           name: javaservice

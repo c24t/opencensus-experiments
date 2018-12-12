@@ -25,7 +25,8 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: gcr.io/opencensus-microservices-demo/pythonservice
+        image: gcr.io/opencensus-interoptest/pythonservice
+        imagePullPolicy: Never
         ports:
         - containerPort: 10401
           name: pythonservice
